@@ -19,3 +19,18 @@ function getProducts() {
 }
 
 getProducts();
+
+function displayProducts(products) {
+    const productsContainer = document.querySelector('.products');
+    products.forEach(product => {
+        const productElement = document.createElement('div');
+        productElement.classList.add('product');
+        productElement.innerHTML = `
+            <img src="${product.image}" alt="Product Image">
+            <h3>${product.name}</h3>
+            <p>${product.description}</p>
+            <p>Price: $${product.price}</p>
+        `;
+        productsContainer.appendChild(productElement);
+    });
+}
