@@ -33,19 +33,3 @@ function getProducts() {
 }
 
 getProducts();
-
-function displayProducts(products) {
-    const productsContainer = document.getElementById('products');
-    productsContainer.innerHTML = '';
-    products.forEach(product => {
-        const productElement = document.createElement('div');
-        productElement.classList.add('product');
-        productElement.innerHTML = `
-            <img src="${product.image}" alt="${product.name}">
-            <h3>${product.name}</h3>
-            <p>${product.description}</p>
-            <p>Price: $${product.price}</p>
-        `;
-        productsContainer.appendChild(productElement);
-    });
-}
