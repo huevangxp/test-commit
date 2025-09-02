@@ -18,7 +18,12 @@ loginForm.addEventListener('submit', function(e) {
 
 // get product data from the server
 function getProducts() {
-    fetch('https://dogapi.dog/api/v2/breeds')
+    fetch('https://dogapi.dog/api/v2/breeds', {
+        method: 'GET',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+    })
         .then(response => response.json())
         .then(data => {
             const products = data;
