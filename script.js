@@ -26,7 +26,7 @@ function getProducts() {
     })
         .then(response => response.json())
         .then(data => {
-            console.log(data.data)
+            console.log(data)
             // const products = data;
             // displayProducts(products);
         })
