@@ -15,3 +15,5 @@ loginForm.addEventListener('submit', function(e) {
     // Add your own login logic here, e.g., an AJAX request to a server
     alert('Form submitted! (Check the console for values)');
 });
+
+// 
