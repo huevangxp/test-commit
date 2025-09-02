@@ -16,5 +16,4 @@ loginForm.addEventListener('submit', function(e) {
     alert('Form submitted! (Check the console for values)');
 });
 
-dfasdfasdf
 
