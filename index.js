@@ -13,7 +13,7 @@ function getProducts() {
             products = data.data;
             console.log(products)
             // const products = data;
-            // displayProducts(products);
+            displayProducts(products);
         })
         .catch(error => console.error('Error fetching products:', error));
 }
