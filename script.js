@@ -26,8 +26,9 @@ function getProducts() {
     })
         .then(response => response.json())
         .then(data => {
-            const products = data;
-            displayProducts(products);
+            console.log(data.data)
+            // const products = data;
+            // displayProducts(products);
         })
         .catch(error => console.error('Error fetching products:', error));
 }
