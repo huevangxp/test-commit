@@ -16,4 +16,13 @@ loginForm.addEventListener('submit', function(e) {
     alert('Form submitted! (Check the console for values)');
 });
 
-// 
+// get product data from the server
+function getProducts() {
+    fetch('https://fakestoreapi.com/products')
+        .then(response => response.json())
+        .then(data => {
+            const products = data;
+            displayProducts(products);
+        })
+        .catch(error => console.error('Error fetching products:', error));
+}
