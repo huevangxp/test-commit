@@ -18,7 +18,7 @@ loginForm.addEventListener('submit', function(e) {
 
 // get product data from the server
 function getProducts() {
-    fetch('https://fakestoreapi.com/products')
+    fetch('https://dogapi.dog/api/v2/breeds')
         .then(response => response.json())
         .then(data => {
             const products = data;
