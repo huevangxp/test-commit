@@ -31,3 +31,5 @@ function getProducts() {
         })
         .catch(error => console.error('Error fetching products:', error));
 }
+
+getProducts();
